@@ -30,7 +30,8 @@
         "magento/module-offline-shipping-sample-data": "100.2.*",
         "magento/module-swatches-sample-data": "100.2.*",
         "magento/sample-data-media": "100.2.*",
-        "msp/devtools": "^1.2"
+        "msp/devtools": "^1.2",
+        "vpietri/adm-quickdevbar": "^0.1.13"
     },
     "require-dev": {
         "phpunit/phpunit": "~6.2.0",
