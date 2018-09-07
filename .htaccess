@@ -409,3 +409,6 @@ ErrorDocument 403 /pub/errors/404.php
     </FilesMatch>
 
 </IfModule>
+
+# Magento Chrome Toolbar for MSP DevTools (https://github.com/magespecialist/mage-chrome-toolbar)
+SetEnv MAGE_PROFILER MSP\DevTools\Profiler\Driver\Standard\Output\DevTools
