@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="styles"/>
+    <update handle="editor"/>
+    <body>
+        <referenceContainer name="content">
+            <block class="Irene\MediaLab\Block\Adminhtml\Index" name="medialab.adminhtml.index" template="Irene_MediaLab::index.phtml"/>
+
+            <block  name="medialab.index2" template="Irene_MediaLab::index2.phtml">
+                <arguments>
+                    <argument name="view_model" xsi:type="object">Irene\MediaLab\ViewModel\Adminhtml\Index</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>
