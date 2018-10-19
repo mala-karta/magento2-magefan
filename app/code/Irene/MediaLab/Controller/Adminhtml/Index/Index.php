@@ -1,4 +1,9 @@
 <?php
+/**
+ *
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
 namespace Irene\MediaLab\Controller\Adminhtml\Index;
 
 use Magento\Backend\App\Action\Context;
@@ -43,9 +48,10 @@ class Index extends \Magento\Backend\App\Action
         $resultPage->addBreadcrumb(__('MediaLab'), __('MediaLab'));
         $resultPage->addBreadcrumb(__('Manage Pages'), __('Manage Pages'));
         $resultPage->getConfig()->getTitle()->prepend(__('Media Lab Super'));
-        /*
-                $dataPersistor = $this->_objectManager->get(\Magento\Framework\App\Request\DataPersistorInterface::class);
-                $dataPersistor->clear('cms_page');*/
+
+        //$dataPersistor = $this->_objectManager->get(\Magento\Framework\App\Request\DataPersistorInterface::class);
+        //$dataPersistor->clear('cms_page');
+
         return $resultPage;
     }
 }

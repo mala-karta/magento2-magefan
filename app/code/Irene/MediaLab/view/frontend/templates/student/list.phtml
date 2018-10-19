@@ -1,0 +1,30 @@
+<?php
+
+/** @var Irene\MediaLab\ViewModel\Student $viewModel */
+$viewModel = $block->getViewModel();
+
+$students = $viewModel->getStudents();
+echo 'Count: ' . count($students) . '<br>';
+
+
+?>ssss4545555AAAAAAAAAA
+<?='sddd'?>
+
+<?php
+$count = count($students);
+    if (!$count) {
+        echo 'No Students';
+    } else {
+        $i = 0;
+        echo '<br><br>';
+        foreach ($students as $student) {
+            echo 'This is student # ' . (++$i) . '  id:' . $student->getId()
+                . 'Name: ' .  $student->getName() .  '<br>';
+        }
+
+    }
+
+
+
+
+
