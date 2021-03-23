@@ -1,6 +1,6 @@
 {
-    "name": "magento/magento2-functional-test-module-email",
-    "description": "Magento 2 Functional Test Module Email",
+    "name": "magento/magento2-functional-test-module-configurable-product-sales",
+    "description": "Magento 2 Functional Test Module Configurable Product Sales",
     "type": "magento2-test-module",
     "version": "100.0.0-dev",
     "license": [
@@ -15,23 +15,20 @@
         "php": "~7.0.13|~7.1.0"
     },
     "suggest": {
-        "magento/magento2-functional-test-module-backend": "100.0.0-dev",
-        "magento/magento2-functional-test-module-cms": "100.0.0-dev",
-        "magento/magento2-functional-test-module-config": "100.0.0-dev",
-        "magento/magento2-functional-test-module-store": "100.0.0-dev",
-        "magento/magento2-functional-test-module-theme": "100.0.0-dev",
-        "magento/magento2-functional-test-module-variable": "100.0.0-dev"
+        "magento/magento2-functional-test-module-catalog": "100.0.0-dev",
+        "magento/magento2-functional-test-module-sales": "100.0.0-dev",
+        "magento/magento2-functional-test-module-store": "100.0.0-dev"
     },
     "autoload": {
         "psr-4": {
-            "Magento\\FunctionalTest\\Email\\": ""
+            "Magento\\FunctionalTest\\ConfigurableProductSales\\": ""
         }
     },
     "extra": {
         "map": [
             [
                 "*",
-                "tests/functional/Magento/FunctionalTest/Email"
+                "tests/functional/Magento/FunctionalTest/ConfigurableProductSales"
             ]
         ]
     }
