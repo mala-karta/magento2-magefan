@@ -1,6 +1,6 @@
 {
-    "name": "magento/magento2-functional-test-module-ups",
-    "description": "Magento 2 Functional Test Module Ups",
+    "name": "magento/magento2-functional-test-module-widget",
+    "description": "Magento 2 Functional Test Module Widget",
     "type": "magento2-test-module",
     "version": "100.0.0-dev",
     "license": [
@@ -16,23 +16,23 @@
     },
     "suggest": {
         "magento/magento2-functional-test-module-backend": "100.0.0-dev",
-        "magento/magento2-functional-test-module-catalog-inventory": "100.0.0-dev",
-        "magento/magento2-functional-test-module-directory": "100.0.0-dev",
-        "magento/magento2-functional-test-module-quote": "100.0.0-dev",
-        "magento/magento2-functional-test-module-sales": "100.0.0-dev",
-        "magento/magento2-functional-test-module-shipping": "100.0.0-dev",
-        "magento/magento2-functional-test-module-store": "100.0.0-dev"
+        "magento/magento2-functional-test-module-catalog": "100.0.0-dev",
+        "magento/magento2-functional-test-module-cms": "100.0.0-dev",
+        "magento/magento2-functional-test-module-email": "100.0.0-dev",
+        "magento/magento2-functional-test-module-store": "100.0.0-dev",
+        "magento/magento2-functional-test-module-theme": "100.0.0-dev",
+        "magento/magento2-functional-test-module-variable": "100.0.0-dev"
     },
     "autoload": {
         "psr-4": {
-            "Magento\\FunctionalTest\\Ups\\": ""
+            "Magento\\FunctionalTest\\Widget\\": ""
         }
     },
     "extra": {
         "map": [
             [
                 "*",
-                "tests/functional/Magento/FunctionalTest/Ups"
+                "tests/functional/Magento/FunctionalTest/Widget"
             ]
         ]
     }
