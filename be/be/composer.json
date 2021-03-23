@@ -1,39 +1,49 @@
 {
-    "name": "magento/magento2-functional-test-module-widget",
-    "description": "Magento 2 Functional Test Module Widget",
-    "type": "magento2-test-module",
-    "version": "100.0.0-dev",
+    "name": "magento/project-community-edition",
+    "description": "eCommerce Platform for Growth (Community Edition)",
+    "type": "project",
+    "version": "0.74.0-beta9",
     "license": [
         "OSL-3.0",
         "AFL-3.0"
     ],
-    "config": {
-        "sort-packages": true
-    },
     "require": {
-        "magento/magento2-functional-testing-framework": "1.0.0",
-        "php": "~7.0.13|~7.1.0"
+        "magento/product-community-edition": "0.74.0-beta9"
     },
-    "suggest": {
-        "magento/magento2-functional-test-module-backend": "100.0.0-dev",
-        "magento/magento2-functional-test-module-catalog": "100.0.0-dev",
-        "magento/magento2-functional-test-module-cms": "100.0.0-dev",
-        "magento/magento2-functional-test-module-email": "100.0.0-dev",
-        "magento/magento2-functional-test-module-store": "100.0.0-dev",
-        "magento/magento2-functional-test-module-theme": "100.0.0-dev",
-        "magento/magento2-functional-test-module-variable": "100.0.0-dev"
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://repo.magento.com/"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "4.1.0",
+        "squizlabs/php_codesniffer": "1.5.3",
+        "phpmd/phpmd": "@stable",
+        "pdepend/pdepend": "2.0.6",
+        "sjparkinson/static-review": "~4.1",
+        "fabpot/php-cs-fixer": "~1.2",
+        "lusitanian/oauth": "~0.3"
+    },
+    "config": {
+        "use-include-path": true
     },
     "autoload": {
         "psr-4": {
-            "Magento\\FunctionalTest\\Widget\\": ""
+            "Magento\\Framework\\": "lib/internal/Magento/Framework/",
+            "Magento\\Setup\\": "setup/src/Magento/Setup/"
         }
     },
-    "extra": {
-        "map": [
-            [
-                "*",
-                "tests/functional/Magento/FunctionalTest/Widget"
-            ]
-        ]
-    }
+    "autoload-dev": {
+        "psr-4": {
+            "Magento\\Sniffs\\": "dev/tests/static/framework/Magento/Sniffs/",
+            "Magento\\Tools\\": "dev/tools/Magento/Tools/",
+            "Magento\\Tools\\Sanity\\": "dev/build/publication/sanity/Magento/Tools/Sanity/",
+            "Magento\\TestFramework\\Inspection\\": "dev/tests/static/framework/Magento/TestFramework/Inspection/",
+            "Magento\\TestFramework\\Utility\\": "dev/tests/static/framework/Magento/TestFramework/Utility/",
+            "Magento\\ToolkitFramework\\": "dev/tools/performance-toolkit/framework/Magento/ToolkitFramework/"
+        }
+    },
+    "minimum-stability": "alpha",
+    "prefer-stable": true
 }
