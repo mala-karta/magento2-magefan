@@ -1,6 +1,6 @@
 {
-    "name": "magento/magento2-functional-test-module-catalog-inventory",
-    "description": "Magento 2 Functional Test Module Catalog Inventory",
+    "name": "magento/magento2-functional-test-module-catalog-rule",
+    "description": "Magento 2 Functional Test Module Catalog Rule",
     "type": "magento2-test-module",
     "version": "100.0.0-dev",
     "license": [
@@ -15,24 +15,24 @@
         "php": "~7.0.13|~7.1.0"
     },
     "suggest": {
+        "magento/magento2-functional-test-module-backend": "100.0.0-dev",
         "magento/magento2-functional-test-module-catalog": "100.0.0-dev",
-        "magento/magento2-functional-test-module-config": "100.0.0-dev",
         "magento/magento2-functional-test-module-customer": "100.0.0-dev",
         "magento/magento2-functional-test-module-eav": "100.0.0-dev",
-        "magento/magento2-functional-test-module-quote": "100.0.0-dev",
+        "magento/magento2-functional-test-module-rule": "100.0.0-dev",
         "magento/magento2-functional-test-module-store": "100.0.0-dev",
         "magento/magento2-functional-test-module-ui": "100.0.0-dev"
     },
     "autoload": {
         "psr-4": {
-            "Magento\\FunctionalTest\\CatalogInventory\\": ""
+            "Magento\\FunctionalTest\\CatalogRule\\": ""
         }
     },
     "extra": {
         "map": [
             [
                 "*",
-                "tests/functional/Magento/FunctionalTest/CatalogInventory"
+                "tests/functional/Magento/FunctionalTest/CatalogRule"
             ]
         ]
     }
