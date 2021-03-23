@@ -1,6 +1,6 @@
 {
-    "name": "magento/magento2-functional-test-module-bundle-import-export",
-    "description": "Magento 2 Functional Test Module Bundle Import Export",
+    "name": "magento/magento2-functional-test-module-cache-invalidate",
+    "description": "Magento 2 Functional Test Module Cache Invalidate",
     "type": "magento2-test-module",
     "version": "100.0.0-dev",
     "license": [
@@ -15,22 +15,18 @@
         "php": "~7.0.13|~7.1.0"
     },
     "suggest": {
-        "magento/magento2-functional-test-module-bundle": "100.0.0-dev",
-        "magento/magento2-functional-test-module-catalog": "100.0.0-dev",
-        "magento/magento2-functional-test-module-catalog-import-export": "100.0.0-dev",
-        "magento/magento2-functional-test-module-eav": "100.0.0-dev",
-        "magento/magento2-functional-test-module-import-export": "100.0.0-dev"
+        "magento/magento2-functional-test-module-page-cache": "100.0.0-dev"
     },
     "autoload": {
         "psr-4": {
-            "Magento\\FunctionalTest\\BundleImportExport\\": ""
+            "Magento\\FunctionalTest\\CacheInvalidate\\": ""
         }
     },
     "extra": {
         "map": [
             [
                 "*",
-                "tests/functional/Magento/FunctionalTest/BundleImportExport"
+                "tests/functional/Magento/FunctionalTest/CacheInvalidate"
             ]
         ]
     }
