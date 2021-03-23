@@ -1,6 +1,6 @@
 {
-    "name": "magento/magento2-functional-test-module-encryption-key",
-    "description": "Magento 2 Functional Test Module Encryption Key",
+    "name": "magento/magento2-functional-test-module-developer",
+    "description": "Magento 2 Functional Test Module Developer",
     "type": "magento2-test-module",
     "version": "100.0.0-dev",
     "license": [
@@ -15,19 +15,19 @@
         "php": "~7.0.13|~7.1.0"
     },
     "suggest": {
-        "magento/magento2-functional-test-module-backend": "100.0.0-dev",
-        "magento/magento2-functional-test-module-config": "100.0.0-dev"
+        "magento/magento2-functional-test-module-config": "100.0.0-dev",
+        "magento/magento2-functional-test-module-store": "100.0.0-dev"
     },
     "autoload": {
         "psr-4": {
-            "Magento\\FunctionalTest\\EncryptionKey\\": ""
+            "Magento\\FunctionalTest\\Developer\\": ""
         }
     },
     "extra": {
         "map": [
             [
                 "*",
-                "tests/functional/Magento/FunctionalTest/EncryptionKey"
+                "tests/functional/Magento/FunctionalTest/Developer"
             ]
         ]
     }
