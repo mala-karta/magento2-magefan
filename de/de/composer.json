@@ -1,20 +1,33 @@
 {
-    "name": "magento/theme-frontend-zoom2",
-    "description": "N/A",
-    "require": {
-        "php": "~5.5.0|~5.6.0|~7.0.0|~7.1.0",
-        "magento/theme-frontend-zoom1": "1.0.0-beta",
-        "magento/framework": "1.0.0-beta"
-    },
-    "type": "magento2-theme",
-    "version": "1.0.0-beta",
+    "name": "magento/magento2-functional-test-module-wishlist-analytics",
+    "description": "Magento 2 Acceptance Test Module WishlistAnalytics",
+    "type": "magento2-test-module",
+    "version": "100.0.0-dev",
     "license": [
         "OSL-3.0",
         "AFL-3.0"
     ],
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "magento/magento2-functional-testing-framework": "1.0.0",
+        "php": "~7.0.13|~7.1.0"
+    },
+    "suggest": {
+        "magento/magento2-functional-test-module-wishlist": "100.0.0-dev"
+    },
     "autoload": {
-        "files": [
-            "registration.php"
+        "psr-4": {
+            "Magento\\FunctionalTest\\WishlistAnalytics\\": ""
+        }
+    },
+    "extra": {
+        "map": [
+            [
+                "*",
+                "tests/functional/Magento/FunctionalTest/WishlistAnalytics"
+            ]
         ]
     }
 }
