@@ -1,8 +1,8 @@
 {
-  "name": "magento/module-second",
+  "name": "magento/module-first",
   "description": "N/A",
   "suggest": {
-    "magento/module-some-module": "Some Module:888.8.*"
+    "magento/module-first-sample-data": "Sample Data version:777.7.*"
   },
   "type": "magento2-module",
   "version": "777.7.7"
