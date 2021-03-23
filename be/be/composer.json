@@ -1,6 +1,6 @@
 {
-    "name": "magento/magento2-functional-test-module-require-js",
-    "description": "Magento 2 Functional Test Module Require Js",
+    "name": "magento/magento2-functional-test-module-sample-tests",
+    "description": "Magento 2 Functional Test Module Sample Tests",
     "type": "magento2-test-module",
     "version": "100.0.0-dev",
     "license": [
@@ -16,14 +16,14 @@
     },
     "autoload": {
         "psr-4": {
-            "Magento\\FunctionalTest\\RequireJs\\": ""
+            "Magento\\FunctionalTest\\SampleTests\\": ""
         }
     },
     "extra": {
         "map": [
             [
                 "*",
-                "tests/functional/Magento/FunctionalTest/RequireJs"
+                "tests/functional/Magento/FunctionalTest/SampleTests"
             ]
         ]
     }
