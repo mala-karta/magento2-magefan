@@ -1,6 +1,6 @@
 {
-    "name": "magento/magento2-functional-test-module-cookie",
-    "description": "Magento 2 Functional Test Module Cookie",
+    "name": "magento/magento2-functional-test-module-cron",
+    "description": "Magento 2 Functional Test Module Cron",
     "type": "magento2-test-module",
     "version": "100.0.0-dev",
     "license": [
@@ -19,14 +19,14 @@
     },
     "autoload": {
         "psr-4": {
-            "Magento\\FunctionalTest\\Cookie\\": ""
+            "Magento\\FunctionalTest\\Cron\\": ""
         }
     },
     "extra": {
         "map": [
             [
                 "*",
-                "tests/functional/Magento/FunctionalTest/Cookie"
+                "tests/functional/Magento/FunctionalTest/Cron"
             ]
         ]
     }
