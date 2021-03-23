@@ -1,6 +1,6 @@
 {
-    "name": "magento/magento2-functional-test-module-wishlist",
-    "description": "Magento 2 Functional Test Module Wishlist",
+    "name": "magento/magento2-functional-test-module-wishlist-analytics",
+    "description": "Magento 2 Acceptance Test Module WishlistAnalytics",
     "type": "magento2-test-module",
     "version": "100.0.0-dev",
     "license": [
@@ -15,26 +15,18 @@
         "php": "~7.0.13|~7.1.0"
     },
     "suggest": {
-        "magento/magento2-functional-test-module-backend": "100.0.0-dev",
-        "magento/magento2-functional-test-module-catalog": "100.0.0-dev",
-        "magento/magento2-functional-test-module-catalog-inventory": "100.0.0-dev",
-        "magento/magento2-functional-test-module-checkout": "100.0.0-dev",
-        "magento/magento2-functional-test-module-customer": "100.0.0-dev",
-        "magento/magento2-functional-test-module-rss": "100.0.0-dev",
-        "magento/magento2-functional-test-module-sales": "100.0.0-dev",
-        "magento/magento2-functional-test-module-store": "100.0.0-dev",
-        "magento/magento2-functional-test-module-ui": "100.0.0-dev"
+        "magento/magento2-functional-test-module-wishlist": "100.0.0-dev"
     },
     "autoload": {
         "psr-4": {
-            "Magento\\FunctionalTest\\Wishlist\\": ""
+            "Magento\\FunctionalTest\\WishlistAnalytics\\": ""
         }
     },
     "extra": {
         "map": [
             [
                 "*",
-                "tests/functional/Magento/FunctionalTest/Wishlist"
+                "tests/functional/Magento/FunctionalTest/WishlistAnalytics"
             ]
         ]
     }
