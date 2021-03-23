@@ -1,9 +1,18 @@
 {
-  "name": "magento/module-second",
-  "description": "N/A",
-  "suggest": {
-    "magento/module-some-module": "Some Module:888.8.*"
+  "version": "0.74.0-beta9",
+  "require": {
+    "magento/product-community-edition": "0.74.0-beta2",
+    "magento/sample-module-minimal": "*"
   },
-  "type": "magento2-module",
-  "version": "777.7.7"
+  "autoload": {
+    "psr-4": {
+      "Magento\\Framework\\": "htdocs/lib/internal/Magento/Framework/",
+      "Magento\\Setup\\": "htdocs/setup/src/Magento/Setup/"
+    }
+  },
+  "extra": {
+    "magento-root-dir": "htdocs",
+    "magento-deploystrategy": "copy"
+  },
+  "minimum-stability": "dev"
 }
