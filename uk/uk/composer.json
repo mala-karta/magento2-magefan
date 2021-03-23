@@ -1,6 +1,6 @@
 {
-    "name": "magento/magento2-functional-test-module-fedex",
-    "description": "Magento 2 Functional Test Module Fedex",
+    "name": "magento/magento2-functional-test-module-store",
+    "description": "Magento 2 Functional Test Module Store",
     "type": "magento2-test-module",
     "version": "100.0.0-dev",
     "license": [
@@ -16,24 +16,21 @@
     },
     "suggest": {
         "magento/magento2-functional-test-module-catalog": "100.0.0-dev",
-        "magento/magento2-functional-test-module-catalog-inventory": "100.0.0-dev",
         "magento/magento2-functional-test-module-config": "100.0.0-dev",
         "magento/magento2-functional-test-module-directory": "100.0.0-dev",
-        "magento/magento2-functional-test-module-quote": "100.0.0-dev",
-        "magento/magento2-functional-test-module-sales": "100.0.0-dev",
-        "magento/magento2-functional-test-module-shipping": "100.0.0-dev",
-        "magento/magento2-functional-test-module-store": "100.0.0-dev"
+        "magento/magento2-functional-test-module-media-storage": "100.0.0-dev",
+        "magento/magento2-functional-test-module-ui": "100.0.0-dev"
     },
     "autoload": {
         "psr-4": {
-            "Magento\\FunctionalTest\\Fedex\\": ""
+            "Magento\\FunctionalTest\\Store\\": ""
         }
     },
     "extra": {
         "map": [
             [
                 "*",
-                "tests/functional/Magento/FunctionalTest/Fedex"
+                "tests/functional/Magento/FunctionalTest/Store"
             ]
         ]
     }
