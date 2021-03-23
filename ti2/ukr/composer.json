@@ -1,6 +1,6 @@
 {
-    "name": "magento/magento2-functional-test-module-persistent",
-    "description": "Magento 2 Functional Test Module Persistent",
+    "name": "magento/magento2-functional-test-module-product-alert",
+    "description": "Magento 2 Functional Test Module Product Alert",
     "type": "magento2-test-module",
     "version": "100.0.0-dev",
     "license": [
@@ -15,23 +15,21 @@
         "php": "~7.0.13|~7.1.0"
     },
     "suggest": {
-        "magento/magento2-functional-test-module-checkout": "100.0.0-dev",
-        "magento/magento2-functional-test-module-cron": "100.0.0-dev",
+        "magento/magento2-functional-test-module-backend": "100.0.0-dev",
+        "magento/magento2-functional-test-module-catalog": "100.0.0-dev",
         "magento/magento2-functional-test-module-customer": "100.0.0-dev",
-        "magento/magento2-functional-test-module-page-cache": "100.0.0-dev",
-        "magento/magento2-functional-test-module-quote": "100.0.0-dev",
         "magento/magento2-functional-test-module-store": "100.0.0-dev"
     },
     "autoload": {
         "psr-4": {
-            "Magento\\FunctionalTest\\Persistent\\": ""
+            "Magento\\FunctionalTest\\ProductAlert\\": ""
         }
     },
     "extra": {
         "map": [
             [
                 "*",
-                "tests/functional/Magento/FunctionalTest/Persistent"
+                "tests/functional/Magento/FunctionalTest/ProductAlert"
             ]
         ]
     }
