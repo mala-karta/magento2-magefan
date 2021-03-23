@@ -1,6 +1,6 @@
 {
-    "name": "magento/magento2-functional-test-module-robots",
-    "description": "Magento 2 Functional Test Module Robots",
+    "name": "magento/magento2-functional-test-module-catalog-rule",
+    "description": "Magento 2 Functional Test Module Catalog Rule",
     "type": "magento2-test-module",
     "version": "100.0.0-dev",
     "license": [
@@ -15,18 +15,24 @@
         "php": "~7.0.13|~7.1.0"
     },
     "suggest": {
-        "magento/magento2-functional-test-module-store": "100.0.0-dev"
+        "magento/magento2-functional-test-module-backend": "100.0.0-dev",
+        "magento/magento2-functional-test-module-catalog": "100.0.0-dev",
+        "magento/magento2-functional-test-module-customer": "100.0.0-dev",
+        "magento/magento2-functional-test-module-eav": "100.0.0-dev",
+        "magento/magento2-functional-test-module-rule": "100.0.0-dev",
+        "magento/magento2-functional-test-module-store": "100.0.0-dev",
+        "magento/magento2-functional-test-module-ui": "100.0.0-dev"
     },
     "autoload": {
         "psr-4": {
-            "Magento\\FunctionalTest\\Robots\\": ""
+            "Magento\\FunctionalTest\\CatalogRule\\": ""
         }
     },
     "extra": {
         "map": [
             [
                 "*",
-                "tests/functional/Magento/FunctionalTest/Robots"
+                "tests/functional/Magento/FunctionalTest/CatalogRule"
             ]
         ]
     }
