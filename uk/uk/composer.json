@@ -1,6 +1,6 @@
 {
-    "name": "magento/magento2-functional-test-module-offline-shipping",
-    "description": "Magento 2 Functional Test Module Offline Shipping",
+    "name": "magento/magento2-functional-test-module-media-storage",
+    "description": "Magento 2 Functional Test Module Media Storage",
     "type": "magento2-test-module",
     "version": "100.0.0-dev",
     "license": [
@@ -16,25 +16,19 @@
     },
     "suggest": {
         "magento/magento2-functional-test-module-backend": "100.0.0-dev",
-        "magento/magento2-functional-test-module-catalog": "100.0.0-dev",
         "magento/magento2-functional-test-module-config": "100.0.0-dev",
-        "magento/magento2-functional-test-module-directory": "100.0.0-dev",
-        "magento/magento2-functional-test-module-quote": "100.0.0-dev",
-        "magento/magento2-functional-test-module-sales": "100.0.0-dev",
-        "magento/magento2-functional-test-module-sales-rule": "100.0.0-dev",
-        "magento/magento2-functional-test-module-shipping": "100.0.0-dev",
         "magento/magento2-functional-test-module-store": "100.0.0-dev"
     },
     "autoload": {
         "psr-4": {
-            "Magento\\FunctionalTest\\OfflineShipping\\": ""
+            "Magento\\FunctionalTest\\MediaStorage\\": ""
         }
     },
     "extra": {
         "map": [
             [
                 "*",
-                "tests/functional/Magento/FunctionalTest/OfflineShipping"
+                "tests/functional/Magento/FunctionalTest/MediaStorage"
             ]
         ]
     }
