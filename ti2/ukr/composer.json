@@ -1,10 +1,10 @@
 {
-  "name": "magento/module-test-module-integration-from-config",
-  "description": "test integration create from config",
+  "name": "magento/module-test-join-directives",
+  "description": "test integration for join directives",
   "require": {
     "php": "~7.0.13|~7.1.0",
     "magento/framework": "0.42.0-beta8",
-    "magento/module-integration": "0.42.0-beta8"
+    "magento/module-sales": "0.42.0-beta8"
   },
   "type": "magento2-module",
   "version": "1.0",
@@ -12,7 +12,7 @@
     "map": [
       [
         "*",
-        "Magento/TestModuleIntegrationFromConfig"
+        "Magento/TestModuleJoinDirectives"
       ]
     ]
   }
