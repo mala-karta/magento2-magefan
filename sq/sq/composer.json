@@ -1,6 +1,6 @@
 {
-    "name": "magento/magento2-functional-test-module-translation",
-    "description": "Magento 2 Functional Test Module Translation",
+    "name": "magento/magento2-functional-test-module-sample-data",
+    "description": "Magento 2 Functional Test Module Sample Data",
     "type": "magento2-test-module",
     "version": "100.0.0-dev",
     "license": [
@@ -14,21 +14,16 @@
         "magento/magento2-functional-testing-framework": "1.0.0",
         "php": "~7.0.13|~7.1.0"
     },
-    "suggest": {
-        "magento/magento2-functional-test-module-backend": "100.0.0-dev",
-        "magento/magento2-functional-test-module-developer": "100.0.0-dev",
-        "magento/magento2-functional-test-module-store": "100.0.0-dev"
-    },
     "autoload": {
         "psr-4": {
-            "Magento\\FunctionalTest\\Translation\\": ""
+            "Magento\\FunctionalTest\\SampleData\\": ""
         }
     },
     "extra": {
         "map": [
             [
                 "*",
-                "tests/functional/Magento/FunctionalTest/Translation"
+                "tests/functional/Magento/FunctionalTest/SampleData"
             ]
         ]
     }
