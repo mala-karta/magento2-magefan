@@ -1,33 +1,19 @@
 {
-    "name": "magento/magento2-functional-test-module-wishlist-analytics",
-    "description": "Magento 2 Acceptance Test Module WishlistAnalytics",
-    "type": "magento2-test-module",
-    "version": "100.0.0-dev",
-    "license": [
-        "OSL-3.0",
-        "AFL-3.0"
-    ],
-    "config": {
-        "sort-packages": true
-    },
-    "require": {
-        "magento/magento2-functional-testing-framework": "1.0.0",
-        "php": "~7.0.13|~7.1.0"
-    },
-    "suggest": {
-        "magento/magento2-functional-test-module-wishlist": "100.0.0-dev"
-    },
-    "autoload": {
-        "psr-4": {
-            "Magento\\FunctionalTest\\WishlistAnalytics\\": ""
-        }
-    },
-    "extra": {
-        "map": [
-            [
-                "*",
-                "tests/functional/Magento/FunctionalTest/WishlistAnalytics"
-            ]
-        ]
-    }
+  "name": "magento/module-test-module-integration-from-config",
+  "description": "test integration create from config",
+  "require": {
+    "php": "~7.0.13|~7.1.0",
+    "magento/framework": "0.42.0-beta8",
+    "magento/module-integration": "0.42.0-beta8"
+  },
+  "type": "magento2-module",
+  "version": "1.0",
+  "extra": {
+    "map": [
+      [
+        "*",
+        "Magento/TestModuleIntegrationFromConfig"
+      ]
+    ]
+  }
 }
