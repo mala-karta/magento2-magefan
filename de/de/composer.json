@@ -1,6 +1,6 @@
 {
-    "name": "magento/magento2-functional-test-module-sales-sequence",
-    "description": "Magento 2 Functional Test Module Sales Sequence",
+    "name": "magento/magento2-functional-test-module-sample-data",
+    "description": "Magento 2 Functional Test Module Sample Data",
     "type": "magento2-test-module",
     "version": "100.0.0-dev",
     "license": [
@@ -16,14 +16,14 @@
     },
     "autoload": {
         "psr-4": {
-            "Magento\\FunctionalTest\\SalesSequence\\": ""
+            "Magento\\FunctionalTest\\SampleData\\": ""
         }
     },
     "extra": {
         "map": [
             [
                 "*",
-                "tests/functional/Magento/FunctionalTest/SalesSequence"
+                "tests/functional/Magento/FunctionalTest/SampleData"
             ]
         ]
     }
