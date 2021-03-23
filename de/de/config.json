@@ -1,15 +1,51 @@
 {
     "base": {
-        "nodeId": "mage-init-node",
-        "dataAttr": "data-mage-init",
-        "containerId": "test-suite-container"
+        "containerId": "test-suite-container",
+        "dataAttr": "data-mage-init"
     },
-    "fn": {
-        "nodeData": {
-            "tests/assets/apply/components/fn": {
-                "baz": "foo"
+    "virtual": {
+        "scriptData": {
+            "*": {
+                "tests/assets/script/component": {
+                    "config": {
+                        "foo": "bar"
+                    }
+                }
             }
         },
-        "timeout": 20
+        "scriptId": "virtual-selector"
+    },
+    "bySelector": {
+        "nodeData": {
+            "tests/assets/script/component": {
+                "data": {
+                    "foo": {
+                        "baz": "foo"
+                    }
+                }
+            }
+        },
+        "scriptData": {
+            "#node-by-selector": {
+                "tests/assets/script/component": {
+                    "data": {
+                        "foo": {
+                            "bar": "baz"
+                        }
+                    }
+                }
+            }
+        },
+        "merged": {
+            "tests/assets/script/component": {
+                "data": {
+                    "foo": {
+                        "baz": "foo",
+                        "bar": "baz"
+                    }
+                }
+            }
+        },
+        "nodeId": "node-by-selector"
     }
 }
