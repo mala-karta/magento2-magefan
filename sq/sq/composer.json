@@ -1,6 +1,6 @@
 {
-    "name": "magento/magento2-functional-test-module-config",
-    "description": "Magento 2 Functional Test Module Config",
+    "name": "magento/magento2-functional-test-module-configurable-product",
+    "description": "Magento 2 Functional Test Module Configurable Product",
     "type": "magento2-test-module",
     "version": "100.0.0-dev",
     "license": [
@@ -16,23 +16,27 @@
     },
     "suggest": {
         "magento/magento2-functional-test-module-backend": "100.0.0-dev",
-        "magento/magento2-functional-test-module-cron": "100.0.0-dev",
-        "magento/magento2-functional-test-module-deploy": "100.0.0-dev",
-        "magento/magento2-functional-test-module-directory": "100.0.0-dev",
-        "magento/magento2-functional-test-module-email": "100.0.0-dev",
+        "magento/magento2-functional-test-module-catalog": "100.0.0-dev",
+        "magento/magento2-functional-test-module-catalog-inventory": "100.0.0-dev",
+        "magento/magento2-functional-test-module-checkout": "100.0.0-dev",
+        "magento/magento2-functional-test-module-customer": "100.0.0-dev",
+        "magento/magento2-functional-test-module-eav": "100.0.0-dev",
         "magento/magento2-functional-test-module-media-storage": "100.0.0-dev",
-        "magento/magento2-functional-test-module-store": "100.0.0-dev"
+        "magento/magento2-functional-test-module-msrp": "100.0.0-dev",
+        "magento/magento2-functional-test-module-quote": "100.0.0-dev",
+        "magento/magento2-functional-test-module-store": "100.0.0-dev",
+        "magento/magento2-functional-test-module-ui": "100.0.0-dev"
     },
     "autoload": {
         "psr-4": {
-            "Magento\\FunctionalTest\\Config\\": ""
+            "Magento\\FunctionalTest\\ConfigurableProduct\\": ""
         }
     },
     "extra": {
         "map": [
             [
                 "*",
-                "tests/functional/Magento/FunctionalTest/Config"
+                "tests/functional/Magento/FunctionalTest/ConfigurableProduct"
             ]
         ]
     }
